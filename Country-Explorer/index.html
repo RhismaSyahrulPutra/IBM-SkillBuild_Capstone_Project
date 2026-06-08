@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <img src="assets/world.png" alt="Logo" class="logo" />
+
+        <h1>Country Explorer</h1>
+      </div>
+    </header>
+
+    <!-- FILTER -->
+    <section class="filter-section">
+      <!-- SEARCH -->
+      <div class="filter-group">
+        <label for="countrySearch"> Search by Country Name: </label>
+
+        <input
+          type="text"
+          id="countrySearch"
+          placeholder="Enter Country Name"
+        />
+      </div>
+
+      <!-- REGION -->
+      <div class="filter-group">
+        <label for="regionFilter"> Select a Region: </label>
+
+        <select id="regionFilter">
+          <option value="">All Regions</option>
+        </select>
+      </div>
+
+      <!-- POPULATION -->
+      <div class="filter-group">
+        <label for="populationFilter"> Search by Population: </label>
+
+        <input type="number" id="populationFilter" placeholder="0" />
+
+        <small> Max - 1.5 Billion (1500000000) </small>
+      </div>
+    </section>
+
+    <!-- COUNTRY CARDS -->
+    <main id="country-cards-container" class="countries-container"></main>
+
+    <!-- SHOW MORE -->
+    <div class="show-more-container">
+      <button id="showMoreBtn">Show More</button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
