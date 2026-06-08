@@ -24,7 +24,7 @@
 Clone this repository to your local machine:
 
 ```bash
-git https://github.com/RhismaSyahrulPutra/Country-Explorer.git
+git https://github.com/RhismaSyahrulPutra/IBM-SkillBuild_Capstone_Project.git
 ```
 
 This command is used to copy the project repository from GitHub to your local computer.
