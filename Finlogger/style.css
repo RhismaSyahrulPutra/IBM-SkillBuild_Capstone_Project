@@ -1,0 +1,342 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.header-section {
+  background-color: #007d79;
+  padding: 10px 0;
+}
+
+.app-title {
+  font-family: Verdana, sans-serif;
+  font-size: 2.3rem;
+  font-style: italic;
+  color: #ffffff;
+  margin: 0;
+}
+
+.app-tagline {
+  color: #f0f7f6;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* =====================================================
+   OVERVIEW
+===================================================== */
+.overview-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   MONTH PICKER
+===================================================== */
+.month-filter,
+input[type="month"] {
+  display: inline-block;
+  width: 170px !important;
+  background-color: #ececec;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+.expButton {
+  background-color: #007d79;
+  border-color: #007d79;
+  color: #ffffff;
+}
+
+.expButton:hover {
+  background-color: #005d5d;
+  border-color: #005d5d;
+  color: #ffffff;
+}
+
+/* =====================================================
+   OVERVIEW CARDS
+===================================================== */
+.overview-card {
+  background-color: #ececec;
+  border: none;
+  border-radius: 0;
+  min-height: 110px;
+}
+
+.overview-card .card-body {
+  padding: 1.5rem;
+}
+
+.overview-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   SECTION TITLES
+===================================================== */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* =====================================================
+   TABLES
+===================================================== */
+.summary-table,
+.details-table {
+  width: 100%;
+  background-color: #ececec;
+  margin-bottom: 0;
+}
+
+.summary-table thead,
+.details-table thead {
+  background-color: #ececec;
+}
+
+.summary-table th,
+.details-table th {
+  font-weight: 700;
+  border-color: #cfcfcf;
+}
+
+.summary-table td,
+.details-table td {
+  border-color: #cfcfcf;
+  background-color: #ececec;
+}
+
+.summary-table td,
+.summary-table th,
+.details-table td,
+.details-table th {
+  vertical-align: middle;
+  padding: 0.75rem;
+}
+
+/* =====================================================
+   ACTION COLUMN
+===================================================== */
+#expenseTable td:last-child {
+  width: 70px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* =====================================================
+   EDIT & DELETE LINKS
+===================================================== */
+.edit-link,
+.delete-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.edit-link.expButton {
+  background: transparent;
+  border: none;
+}
+
+.edit-link {
+  margin-right: 8px;
+}
+
+.edit-link:hover,
+.delete-link:hover {
+  opacity: 0.7;
+}
+
+/* =====================================================
+   ACTION ICONS
+===================================================== */
+.action-icon {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: opacity 0.2s ease;
+}
+
+.action-icon:hover {
+  opacity: 0.7;
+}
+
+/* =====================================================
+   EXPENSE MODAL
+===================================================== */
+
+/* Modal Size */
+#expenseModal .modal-dialog {
+  max-width: 500px;
+}
+
+/* Modal Container */
+#expenseModal .modal-content {
+  border-radius: 0;
+  border: 1px solid #9c9c9c;
+}
+
+/* Header */
+#expenseModal .modal-header {
+  padding: 25px;
+  border-bottom: 1px solid #9c9c9c;
+}
+
+#expenseModal .modal-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Body */
+#expenseModal .modal-body {
+  padding: 25px;
+}
+
+/* Footer */
+#expenseModal .modal-footer {
+  padding: 20px 25px;
+  border-top: 1px solid #9c9c9c;
+}
+
+/* Form Group */
+#expenseModal .form-group {
+  margin-bottom: 5px;
+}
+
+/* Labels */
+#expenseModal label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Inputs */
+#expenseModal .form-control {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #8f8f8f;
+  padding: 0 16px;
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+#expenseModal .form-control:focus {
+  border-color: #007d79;
+  box-shadow: none;
+}
+
+/* Dropdown */
+#expenseModal select.form-control {
+  cursor: pointer;
+}
+
+/* Footer Buttons */
+#expenseModal .btn {
+  min-width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* Cancel */
+#expenseModal .btn-secondary {
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
+  color: #000;
+}
+
+#expenseModal .btn-secondary:hover {
+  background-color: #c8c8c8;
+  border-color: #c8c8c8;
+}
+
+/* Submit */
+#expenseModal .btn-primary {
+  background-color: #8c8c8c;
+  border-color: #8c8c8c;
+  color: #fff;
+}
+
+#expenseModal .btn-primary:hover {
+  background-color: #777;
+  border-color: #777;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 768px) {
+  /* Header */
+  .app-title {
+    text-align: left;
+  }
+
+  .app-tagline {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  /* Overview */
+  .overview-title {
+    margin-bottom: 1rem;
+  }
+
+  .month-filter,
+  input[type="month"] {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+  /* Overview Cards */
+  .overview-card {
+    margin-bottom: 10px;
+  }
+
+  /* Spacing between sections */
+  .main-container {
+    margin-top: 15px;
+  }
+
+  .row {
+    margin-top: 15px;
+  }
+
+  /* Expense Summary & Expense Details */
+  .table-responsive,
+  .tbl-container {
+    margin-top: 10px;
+  }
+
+  /* Modal */
+  #expenseModal .modal-title {
+    font-size: 1.5rem;
+  }
+}
